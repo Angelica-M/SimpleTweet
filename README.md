@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [ ] User can logout of their Twitter account
 
 ## Video Walkthrough
 
@@ -39,7 +39,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+While developing this app, I faced two problems. The solutions to how they were solved is below. When I got an Error on BuildConfig.CONSUMER_KEY and BuildConfig.CONSUMER_SECRET, I went to the Build tab in Android Studio and ran Generate Sources Gradle Tasks. After I logged into my Twitter developer account, I specified the callback url to be “intent://” in the Twitter Developer App Settings; this corrected the app's inability to connect to Twitter. 
 
 ## Open-source libraries used
 
