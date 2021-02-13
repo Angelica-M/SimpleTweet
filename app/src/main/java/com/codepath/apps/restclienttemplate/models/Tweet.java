@@ -1,4 +1,7 @@
+// View Twitter Api documentation here https://developer.twitter.com/en/docs/twitter-api/v1
 package com.codepath.apps.restclienttemplate.models;
+
+import com.codepath.apps.restclienttemplate.TimeFormatter;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,5 +31,11 @@ public class Tweet {
             tweets.add(fromJson(jsonArray.getJSONObject(i)));
         }
         return tweets;
+    }
+
+    public String getFormattedTimestamp() {
+        // Returns the correct time for the tweet returning as described in https://hackmd.io/@nesquena/HJZhnNLSE?type=view
+        // createdAt is the actual date string pulled from the JSON for the tweet (created_at field)
+        return TimeFormatter.getTimeDifference(createdAt);
     }
 }
