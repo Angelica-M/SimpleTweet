@@ -50,5 +50,7 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
     implementation 'com.facebook.stetho:stetho:1.5.1'
-    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0' // For Implementing Pull to Refresh feature as described in https://guides.codepath.org/android/Implementing-Pull-to-Refresh-Guide
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0' // For implementing Pull to Refresh feature as described in https://guides.codepath.org/android/Implementing-Pull-to-Refresh-Guide
+    implementation 'org.parceler:parceler-api:1.1.12' // For implementing Post Tweet feature
+    annotationProcessor 'org.parceler:parceler:1.1.12'
 }
